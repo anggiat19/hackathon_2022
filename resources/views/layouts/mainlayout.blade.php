@@ -36,7 +36,7 @@
                         @endif>Dashboard</a>
                         <a href="/books" @if (request()->route()->uri== 'books' || request()->route()->uri== 'book-add' || request()->route()->uri== 'book-edit/{slug}' || request()->route()->uri== 'book-delete/{slug}' || request()->route()->uri== 'book-deleted' || request()->route()->uri== 'book-restore/{slug}')class="active"
 
-                            @endif>Books</a>
+                            @endif>Produk</a>
                         <a href="/category" @if (request()->route()->uri== 'category' || request()->route()->uri== 'category-add' || request()->route()->uri== 'category-edit/{slug}' || request()->route()->uri== 'category-delete/{slug}' || request()->route()->uri== 'category-deleted' || request()->route()->uri== 'category-restore/{slug}') class=' active'
 
                             @endif>Categories</a>
