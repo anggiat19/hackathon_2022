@@ -6,7 +6,7 @@
 
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-<h1>Add New Book</h1>
+<h1>Add New Produk</h1>
 
 <div class="mt-5 w-50">
 
@@ -19,16 +19,21 @@
         </ul>
     </div>
 @endif
-<form action="book-add" method="post" enctype="multipart/form-data">
+<form action="produk-add" method="post" enctype="multipart/form-data">
     @csrf
     <div>
-        <label for="code" class="form-label">Code</label>
-        <input type="text" name="book_code" id="code" class="form-control" placeholder="Books Code" value="{{ old('book_code') }}">
+        <label for="code" class="form-label">Nama</label>
+        <input type="text" name="nama_produk" id="code" class="form-control" placeholder="Books Code" value="{{ old('book_code') }}">
+    </div>
+
+    <div>
+        <label for="code" class="form-label">Harga</label>
+        <input type="text" name="harga" id="code" class="form-control" placeholder="Books Code" value="{{ old('book_code') }}">
     </div>
 
     <div class="mt-3">
-        <label for="cover" class="form-label">Title</label>
-        <input type="text" name="title" id="title" class="form-control" placeholder="Books Title" value="{{ old('title') }}">
+        <label for="cover" class="form-label">Deskripsi</label>
+        <input type="text" name="deskripsi_produk" id="title" class="form-control" placeholder="Books Title" value="{{ old('title') }}">
     </div>
 
     <div class="mt-3">
@@ -36,16 +41,16 @@
         <input type="file" name="image" class="form-control" >
     </div>
 
-    <div class="mt-3">
+    {{-- <div class="mt-3">
         <label for="category" class="form-label">Category</label>
         <select name="categories[]" id="category" class="form-control select-multiple" multiple>
 
-            {{-- @foreach ($categories as $item )
+            @foreach ($categories as $item )
             <option value="{{ $item->id }}">{{ $item->name }}</option>
 
-            @endforeach --}}
+            @endforeach
         </select>
-    </div>
+    </div> --}}
 
     <div class="mt-5">
         <button class="btn btn-success " type="submit">save</button>

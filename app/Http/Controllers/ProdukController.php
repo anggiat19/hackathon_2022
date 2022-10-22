@@ -36,11 +36,11 @@ class ProdukController extends Controller
 
    {
 
-    $validated = $request->validate([
-        'book_code' => 'required|unique:books|max:255',
-        'title' => 'required|max:255'
+    // $validated = $request->validate([
+    //     'book_code' => 'required|unique:books|max:255',
+    //     'title' => 'required|max:255'
 
-    ]);
+    // ]);
         $newName = '';
         if($request->file('image')){
             $extension = $request->file('image')->getClientOriginalExtension();
@@ -50,8 +50,8 @@ class ProdukController extends Controller
 
             $request['cover'] = $newName;
             $book = Produk::create($request->all());
-            $book->categories()->sync($request->categories);
-            return redirect('books')->with('status', 'Book Added Successfully');
+            // $book->categories()->sync($request->categories);
+            return redirect('produks')->with('status', 'Book Added Successfully');
    }
 
 //    public function edit($slug)
