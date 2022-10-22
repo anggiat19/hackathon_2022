@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('desk_pemesanans', function (Blueprint $table) {
             $table->id();
+            $table->double('jumlah_beli');
+            $table->double('jumlah_harga');
             $table->timestamps();
         });
     }
