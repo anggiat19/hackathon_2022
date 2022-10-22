@@ -11,7 +11,7 @@
 <body>
 
 
-    <section class="vh-100" style="background-color: #508bfc;">
+    <section class="vh-100" style="background-image: url('/img/bglogin.png'); background-size: 100% 100%;">
 
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
@@ -25,11 +25,13 @@
                     </div>
                     @endif
 
-
+                    <a href="#">
+                      <img src="img/LOGO.png" width="50px">
+                    </a>
                 <form action="" method="post">
                 @csrf
 
-                  <h3 class="mb-5">Sign in</h3>
+                  <h3 class="mb-5 mt-4">Sign In</h3>
 
                   <div class="form-outline mb-4">
                     <input type="text" id="typeEmailX-2" class="form-control form-control-lg" name="username" placeholder="Username"/>
@@ -47,7 +49,7 @@
                     <label class="form-check-label" for="form1Example3"> Remember password </label>
                   </div>
 
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button><br>
+                  <button class="btn btn-lg btn-block" style="background : #fa8231" type="submit">Login</button><br>
 
                   <div class="my-3">
                     don't have account ? <a href="register" >Sign Up</a>

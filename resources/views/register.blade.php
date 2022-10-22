@@ -10,7 +10,8 @@
 <body>
 
 
-    <section class="vh-100" style="background-color: #508bfc;">
+  <section class="vh-100" style="background-image: url('/img/bglogin.png');  background-repeat: no-repeat;
+  background-attachment: fixed; background-size:100% 100%;">
 
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
@@ -59,7 +60,7 @@
 
 
 
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button><br>
+                  <button class="btn btn-lg btn-block" style="background : #fa8231" type="submit">Register</button><br>
 
                   <div class="my-3">
                     Have account ? <a href="login" >login</a>
