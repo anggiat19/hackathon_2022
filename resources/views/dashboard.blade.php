@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4  ">
+    <div class="col-lg-4   ">
         <div class="card-data user">
             <div class="row">
                 <div class="col-6"><i class="bi bi-people"></i></div>
@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4  ">
+    <div class="col-lg-4 mt-5 ">
         <div class="card-data user">
             <div class="row">
                 <div class="col-6"><i class="bi bi-people"></i></div>
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div class="col-lg-4  ">
+    <div class="col-lg-4 mt-5  ">
         <div class="card-data categories">
             <div class="row">
                 <div class="col-6"><i class="bi bi-list-task"></i></div>
