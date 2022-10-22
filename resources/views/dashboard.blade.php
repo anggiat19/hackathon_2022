@@ -28,6 +28,28 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-4  ">
+        <div class="card-data user">
+            <div class="row">
+                <div class="col-6"><i class="bi bi-people"></i></div>
+                <div class="col-6  d-flex flex-column justify-content-center align-items-end">
+                    <div class="card-desc">konsumen</div>
+                    {{-- <div class="card-count">{{  }}</div> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4  ">
+        <div class="card-data user">
+            <div class="row">
+                <div class="col-6"><i class="bi bi-people"></i></div>
+                <div class="col-6  d-flex flex-column justify-content-center align-items-end">
+                    <div class="card-desc">Pembayaran</div>
+                    {{-- <div class="card-count">{{  }}</div> --}}
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="col-lg-4  ">
         <div class="card-data categories">
