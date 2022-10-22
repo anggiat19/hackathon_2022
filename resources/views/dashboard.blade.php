@@ -10,8 +10,8 @@
             <div class="row">
                 <div class="col-6"><i class="bi bi-journal-bookmark"></i></div>
                 <div class="col-6  d-flex flex-column justify-content-center align-items-end">
-                    <div class="card-desc">book</div>
-                    {{-- <div class="card-count">{{  }}</div> --}}
+                    <div class="card-desc">Produk</div>
+                    <div class="card-count">{{ $produks }}</div>
                 </div>
             </div>
         </div>

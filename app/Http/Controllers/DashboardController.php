@@ -5,19 +5,20 @@ namespace App\Http\Controllers;
 use App\Models\Book;
 use App\Models\User;
 use App\Models\Category;
+use App\Models\Produk;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-            $bookCount = Book::count();
-            $category = Category::count();
-            $userCount = User::count();
+            $produks = Produk::count();
+            // $category = Category::count();
+            // $userCount = User::count();
            return view('dashboard',[
-            'book_count' => $bookCount,
-            'category_count'=>$category,
-            'user_count'=>$userCount
+            'produks' => $produks,
+            // 'category_count'=>$category,
+            // 'user_count'=>$userCount
 
         ]);
     }
