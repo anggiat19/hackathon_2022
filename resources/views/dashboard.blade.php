@@ -11,7 +11,7 @@
                 <div class="col-6"><i class="bi bi-journal-bookmark"></i></div>
                 <div class="col-6  d-flex flex-column justify-content-center align-items-end">
                     <div class="card-desc">book</div>
-                    <div class="card-count">{{ $book_count }}</div>
+                    {{-- <div class="card-count">{{  }}</div> --}}
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                 <div class="col-6"><i class="bi bi-people"></i></div>
                 <div class="col-6  d-flex flex-column justify-content-center align-items-end">
                     <div class="card-desc">user</div>
-                    <div class="card-count">{{ $user_count }}</div>
+                    {{-- <div class="card-count">{{  }}</div> --}}
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
                 <div class="col-6"><i class="bi bi-list-task"></i></div>
                 <div class="col-6  d-flex flex-column justify-content-center align-items-end">
                     <div class="card-desc">categories</div>
-                    <div class="card-count">{{ $category_count }}</div>
+                    {{-- <div class="card-count">{{  }}</div> --}}
                 </div>
             </div>
         </div>

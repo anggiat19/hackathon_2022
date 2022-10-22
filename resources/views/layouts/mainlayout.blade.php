@@ -34,18 +34,21 @@
                         <a href="/dashboard"  @if (request()->route()->uri== 'dashboard')class="active"
 
                         @endif>Dashboard</a>
-                        <a href="/books" @if (request()->route()->uri== 'books' || request()->route()->uri== 'book-add' || request()->route()->uri== 'book-edit/{slug}' || request()->route()->uri== 'book-delete/{slug}' || request()->route()->uri== 'book-deleted' || request()->route()->uri== 'book-restore/{slug}')class="active"
+                        <a href="/produks" @if (request()->route()->uri== 'books' || request()->route()->uri== 'book-add' || request()->route()->uri== 'book-edit/{slug}' || request()->route()->uri== 'book-delete/{slug}' || request()->route()->uri== 'book-deleted' || request()->route()->uri== 'book-restore/{slug}')class="active"
 
                             @endif>Produk</a>
-                        <a href="/category" @if (request()->route()->uri== 'category' || request()->route()->uri== 'category-add' || request()->route()->uri== 'category-edit/{slug}' || request()->route()->uri== 'category-delete/{slug}' || request()->route()->uri== 'category-deleted' || request()->route()->uri== 'category-restore/{slug}') class=' active'
+                        <a href="/konsumen" @if (request()->route()->uri== 'category' || request()->route()->uri== 'category-add' || request()->route()->uri== 'category-edit/{slug}' || request()->route()->uri== 'category-delete/{slug}' || request()->route()->uri== 'category-deleted' || request()->route()->uri== 'category-restore/{slug}') class=' active'
 
-                            @endif>Categories</a>
+                            @endif>Konsumen</a>
                         <a href="/user"@if (request()->route()->uri== 'user')class="active"
 
                             @endif>Users</a>
-                        <a href="/rentlog"@if (request()->route()->uri== 'rentlog')class="active"
+                        <a href="/pembayaran"@if (request()->route()->uri== 'rentlog')class="active"
 
-                            @endif>Rent Log</a>
+                            @endif>Pembayaran</a>
+                            <a href="/pemesanan"@if (request()->route()->uri== 'rentlog')class="active"
+
+                                @endif>Desk_pemesanan</a>
                         <a href="/logout"@if (request()->route()->uri== 'logout')class="active"
 
                             @endif>logout</a>
