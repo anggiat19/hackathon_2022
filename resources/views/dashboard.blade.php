@@ -56,7 +56,7 @@
             <div class="row">
                 <div class="col-6"><i class="bi bi-list-task"></i></div>
                 <div class="col-6  d-flex flex-column justify-content-center align-items-end">
-                    <div class="card-desc">categories</div>
+                    <div class="card-desc">Pemesanan</div>
                     {{-- <div class="card-count">{{  }}</div> --}}
                 </div>
             </div>
