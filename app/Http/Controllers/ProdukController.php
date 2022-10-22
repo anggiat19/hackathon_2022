@@ -26,28 +26,33 @@ class ProdukController extends Controller
 //     $categoris = Category::all();
 //     return view('book-add',['categories'=>$categoris]);
 //    }
+   public function add()
+    {
 
-//    public function store(Request $request)
+        return view('produk-add');
+    }
 
-//    {
+   public function store(Request $request)
 
-//     $validated = $request->validate([
-//         'book_code' => 'required|unique:books|max:255',
-//         'title' => 'required|max:255'
+   {
 
-//     ]);
-//         $newName = '';
-//         if($request->file('image')){
-//             $extension = $request->file('image')->getClientOriginalExtension();
-//             $newName = $request->title.'-'.now()->timestamp.'.'.$extension;
-//             $request->file('image')->storeAs('cover',$newName);
-//         }
+    $validated = $request->validate([
+        'book_code' => 'required|unique:books|max:255',
+        'title' => 'required|max:255'
 
-//             $request['cover'] = $newName;
-//             $book = Book::create($request->all());
-//             $book->categories()->sync($request->categories);
-//             return redirect('books')->with('status', 'Book Added Successfully');
-//    }
+    ]);
+        $newName = '';
+        if($request->file('image')){
+            $extension = $request->file('image')->getClientOriginalExtension();
+            $newName = $request->title.'-'.now()->timestamp.'.'.$extension;
+            $request->file('image')->storeAs('cover',$newName);
+        }
+
+            $request['cover'] = $newName;
+            $book = Produk::create($request->all());
+            $book->categories()->sync($request->categories);
+            return redirect('books')->with('status', 'Book Added Successfully');
+   }
 
 //    public function edit($slug)
 //    {

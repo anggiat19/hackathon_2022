@@ -7,7 +7,7 @@
 
 <div class="my-3 d-flex justify-content-end">
     <a href=""class="btn btn-secondary me-3">View Deleted Data</a>
-    <a href=""class="btn btn-primary">Add Data</a>
+    <a href="produk-add"class="btn btn-primary">Add Data</a>
 </div>
 
 @if (session('status'))

@@ -56,7 +56,7 @@ Route::middleware('auth')->group(function(){
     // Route::get('book-restore/{slug}',[BookController::class,'restore']);
 
     Route::get('produks',[ProdukController::class,'index']);
-    // Route::get('book-add',[BookController::class,'add']);
+     Route::get('produk-add',[ProdukController::class,'add']);
     // Route::post('book-add',[BookController::class,'store']);
     // Route::get('book-edit/{slug}',[BookController::class,'edit']);
     // Route::post('book-edit/{slug}',[BookController::class,'update']);
